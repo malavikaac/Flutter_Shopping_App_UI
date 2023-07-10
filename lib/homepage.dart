@@ -30,7 +30,16 @@ class _MyHomePageState extends State<MyHomePage> {
                 top: 8,
                 bottom: 8,
               ),
-              child: myWidget.greyText(text: "Search"),
+              child: Row(
+                children: [
+                  const Icon(
+                    Icons.search,
+                    color: Colors.grey,
+                  ),
+                  SizedBox(width: 20),
+                  myWidget.greyText(text: "Search"),
+                ],
+              ),
             ),
           ],
         ),
