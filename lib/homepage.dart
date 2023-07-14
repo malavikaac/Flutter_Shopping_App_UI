@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:shopping_ui_screen/constants.dart';
 import 'package:shopping_ui_screen/widgets.dart';
 
@@ -13,37 +14,47 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
-      child: Container(
-        width: double.infinity,
-        height: 50,
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(25),
-          color: myColors.greyColor,
-        ),
-        child: Row(
-          children: [
-            Padding(
-              padding: const EdgeInsets.only(
-                left: 20,
-                top: 8,
-                bottom: 8,
-              ),
-              child: Row(
+      body: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+          child: Column(
+            children: [
+              Row(
                 children: [
-                  const Icon(
-                    Icons.search,
-                    color: Colors.grey,
+                  Expanded(
+                    flex: 4,
+                    child: Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 10),
+                        decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 221, 221, 221),
+                            borderRadius: BorderRadius.circular(30)),
+                        child: TextFormField(
+                          decoration: const InputDecoration(
+                              disabledBorder: InputBorder.none,
+                              border: InputBorder.none),
+                        )),
                   ),
-                  SizedBox(width: 20),
-                  myWidget.greyText(text: "Search"),
+                  Expanded(
+                      child: myWidget.avatar(
+                          backGroundColor: myColors.greenColor,
+                          icon: Icons.camera_alt_outlined,
+                          iconColor: Colors.white))
                 ],
               ),
-            ),
-          ],
-        ),
-      ),
-    ));
+              const SizedBox(
+                height: 20,
+              ),
+              Row(
+                children: [
+                  Expanded(
+                      child: CircleAvatar(
+                    child: Center(
+                      child: SvgPicture.asset("assets/icons/vector.svg"),
+                    ),
+                  ))
+                ],
+              )
+            ],
+          )),
+    );
   }
 }

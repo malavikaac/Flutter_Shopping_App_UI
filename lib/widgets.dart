@@ -7,13 +7,21 @@ class MyWidget {
   Widget greyText({required text}) {
     return Text(
       text,
-      style: TextStyle(color: myColors.greyColor, fontSize: 18),
+      style: TextStyle(color: myColors.greyTextColor, fontSize: 18),
     );
   }
 
-  Widget Icon({required IconData icon}) {
-    return Icon(
-      icon: icon,
+  Widget avatar(
+      {required Color backGroundColor,
+      required IconData icon,
+      required Color iconColor}) {
+    return CircleAvatar(
+      backgroundColor: backGroundColor,
+      child: Center(
+          child: Icon(
+        icon,
+        color: iconColor,
+      )),
     );
   }
 }
