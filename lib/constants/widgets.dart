@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shopping_ui_screen/constants.dart';
+import 'package:shopping_ui_screen/constants/colors.dart';
 
 final myWidget = MyWidget();
 

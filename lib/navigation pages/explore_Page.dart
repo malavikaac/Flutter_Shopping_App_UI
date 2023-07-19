@@ -1,16 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:shopping_ui_screen/constants.dart';
-import 'package:shopping_ui_screen/widgets.dart';
+import '../constants/colors.dart';
+import '../constants/widgets.dart';
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key});
+class ExplorePage extends StatelessWidget {
+  const ExplorePage({Key? key}) : super(key: key);
 
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,6 +24,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             borderRadius: BorderRadius.circular(30)),
                         child: TextFormField(
                           decoration: const InputDecoration(
+                              hintText: "Search",
                               disabledBorder: InputBorder.none,
                               border: InputBorder.none),
                         )),
@@ -47,6 +43,34 @@ class _MyHomePageState extends State<MyHomePage> {
                 children: [
                   Expanded(
                       child: CircleAvatar(
+                    backgroundColor: Color.fromARGB(255, 219, 203, 203),
+                    maxRadius: 25,
+                    child: Center(
+                      child: SvgPicture.asset("assets/icons/vector.svg",
+                          height: 30),
+                    ),
+                  )),
+                  Expanded(
+                      child: CircleAvatar(
+                    backgroundColor: const Color.fromARGB(255, 218, 164, 164),
+                    maxRadius: 25,
+                    child: Center(
+                      child:
+                          SvgPicture.asset("assets/icons/heel.svg", height: 30),
+                    ),
+                  )),
+                  Expanded(
+                      child: CircleAvatar(
+                    backgroundColor: const Color.fromARGB(255, 218, 164, 164),
+                    maxRadius: 25,
+                    child: Center(
+                      child: SvgPicture.asset("assets/icons/shoe.svg"),
+                    ),
+                  )),
+                  Expanded(
+                      child: CircleAvatar(
+                    backgroundColor: const Color.fromARGB(255, 218, 164, 164),
+                    maxRadius: 25,
                     child: Center(
                       child: SvgPicture.asset("assets/icons/vector.svg"),
                     ),
