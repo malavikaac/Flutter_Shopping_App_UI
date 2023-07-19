@@ -47,7 +47,7 @@ class ExplorePage extends StatelessWidget {
                     maxRadius: 25,
                     child: Center(
                       child: SvgPicture.asset("assets/icons/vector.svg",
-                          height: 30),
+                          height: 32),
                     ),
                   )),
                   Expanded(
