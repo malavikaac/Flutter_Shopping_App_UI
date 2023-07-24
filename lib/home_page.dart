@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'constants/colors.dart';
-import 'navigation pages/explore_Page.dart';
-import 'navigation pages/profile_page.dart';
-import 'navigation pages/shopping_page.dart';
+import 'bottom navigation pages/explore_Page.dart';
+import 'bottom navigation pages/profile_page.dart';
+import 'bottom navigation pages/shopping_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);

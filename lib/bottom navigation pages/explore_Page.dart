@@ -24,57 +24,46 @@ class ExplorePage extends StatelessWidget {
                             borderRadius: BorderRadius.circular(30)),
                         child: TextFormField(
                           decoration: const InputDecoration(
+                              prefixIcon: Icon(Icons.search),
                               hintText: "Search",
                               disabledBorder: InputBorder.none,
                               border: InputBorder.none),
                         )),
                   ),
                   Expanded(
-                      child: myWidget.avatar(
+                      child: myWidget.iconAvatar(
                           backGroundColor: myColors.greenColor,
                           icon: Icons.camera_alt_outlined,
-                          iconColor: Colors.white))
+                          iconColor: myColors.whiteColor))
                 ],
               ),
+              const Align(
+                  alignment: Alignment.topLeft,
+                  child: Padding(
+                    padding: EdgeInsets.all(8.0),
+                    child: Text(
+                      "Categories",
+                      style:
+                          TextStyle(fontSize: 25, fontWeight: FontWeight.w500),
+                    ),
+                  )),
               const SizedBox(
                 height: 20,
               ),
               Row(
                 children: [
                   Expanded(
-                      child: CircleAvatar(
-                    backgroundColor: Color.fromARGB(255, 219, 203, 203),
-                    maxRadius: 25,
-                    child: Center(
-                      child: SvgPicture.asset("assets/icons/vector.svg",
-                          height: 32),
-                    ),
-                  )),
+                      child: myWidget.assetsAvatar(
+                          asset: "assets/icons/vector.svg")),
                   Expanded(
-                      child: CircleAvatar(
-                    backgroundColor: const Color.fromARGB(255, 218, 164, 164),
-                    maxRadius: 25,
-                    child: Center(
-                      child:
-                          SvgPicture.asset("assets/icons/heel.svg", height: 30),
-                    ),
-                  )),
+                      child: myWidget.assetsAvatar(
+                          asset: "assets/icons/heel.svg")),
                   Expanded(
-                      child: CircleAvatar(
-                    backgroundColor: const Color.fromARGB(255, 218, 164, 164),
-                    maxRadius: 25,
-                    child: Center(
-                      child: SvgPicture.asset("assets/icons/shoe.svg"),
-                    ),
-                  )),
+                      child: myWidget.assetsAvatar(
+                          asset: "assets/icons/shoe.svg")),
                   Expanded(
-                      child: CircleAvatar(
-                    backgroundColor: const Color.fromARGB(255, 218, 164, 164),
-                    maxRadius: 25,
-                    child: Center(
-                      child: SvgPicture.asset("assets/icons/vector.svg"),
-                    ),
-                  ))
+                      child: myWidget.assetsAvatar(
+                          asset: "assets/icons/bulb.svg")),
                 ],
               )
             ],
