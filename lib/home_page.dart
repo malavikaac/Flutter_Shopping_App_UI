@@ -42,14 +42,14 @@ class _HomePageState extends State<HomePage> {
               });
             },
             icon: pageIndex == 0
-                ? const Icon(
+                ? Icon(
                     Icons.explore_outlined,
-                    color: Color.fromARGB(255, 0, 202, 91),
+                    color: myColors.greenColor,
                     size: 35,
                   )
-                : const Icon(
+                : Icon(
                     Icons.explore_outlined,
-                    color: Color.fromARGB(255, 126, 126, 126),
+                    color: myColors.iconBottomGreyColor,
                     size: 30,
                   ),
           ),
@@ -61,14 +61,14 @@ class _HomePageState extends State<HomePage> {
               });
             },
             icon: pageIndex == 1
-                ? const Icon(
-                    Icons.shopping_cart,
-                    color: Color.fromARGB(255, 0, 202, 91),
+                ? Icon(
+                    Icons.shopping_cart_outlined,
+                    color: myColors.greenColor,
                     size: 35,
                   )
-                : const Icon(
-                    Icons.shopping_cart,
-                    color: Color.fromARGB(255, 126, 126, 126),
+                : Icon(
+                    Icons.shopping_cart_outlined,
+                    color: myColors.iconBottomGreyColor,
                     size: 30,
                   ),
           ),
@@ -80,14 +80,14 @@ class _HomePageState extends State<HomePage> {
               });
             },
             icon: pageIndex == 2
-                ? const Icon(
+                ? Icon(
                     Icons.person,
-                    color: Color.fromARGB(255, 0, 202, 91),
+                    color: myColors.greenColor,
                     size: 35,
                   )
-                : const Icon(
+                : Icon(
                     Icons.person_outline,
-                    color: Color.fromARGB(255, 126, 126, 126),
+                    color: myColors.iconBottomGreyColor,
                     size: 30,
                   ),
           ),

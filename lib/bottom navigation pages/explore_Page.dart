@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import '../constants/colors.dart';
 import '../constants/widgets.dart';
 
@@ -20,7 +19,7 @@ class ExplorePage extends StatelessWidget {
                     child: Container(
                         padding: const EdgeInsets.symmetric(horizontal: 10),
                         decoration: BoxDecoration(
-                            color: const Color.fromARGB(255, 221, 221, 221),
+                            color: myColors.searchFieldColor,
                             borderRadius: BorderRadius.circular(30)),
                         child: TextFormField(
                           decoration: const InputDecoration(
@@ -37,16 +36,11 @@ class ExplorePage extends StatelessWidget {
                           iconColor: myColors.whiteColor))
                 ],
               ),
-              const Align(
+              Align(
                   alignment: Alignment.topLeft,
                   child: Padding(
-                    padding: EdgeInsets.all(8.0),
-                    child: Text(
-                      "Categories",
-                      style:
-                          TextStyle(fontSize: 25, fontWeight: FontWeight.w500),
-                    ),
-                  )),
+                      padding: const EdgeInsets.all(8.0),
+                      child: myWidget.titleText(text: "Categories"))),
               const SizedBox(
                 height: 20,
               ),

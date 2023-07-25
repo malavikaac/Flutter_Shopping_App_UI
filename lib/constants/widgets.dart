@@ -5,6 +5,14 @@ import 'package:shopping_ui_screen/constants/colors.dart';
 final myWidget = MyWidget();
 
 class MyWidget {
+  Widget titleText({required String text}) {
+    return Text(text,
+        style: TextStyle(
+            fontSize: 25,
+            fontWeight: FontWeight.w500,
+            color: myColors.titleTextColor));
+  }
+
   Widget greyText({required text}) {
     return Text(
       text,
@@ -28,41 +36,41 @@ class MyWidget {
 
   Widget assetsAvatar({required String asset}) {
     return Container(
-      decoration: const BoxDecoration(
+      decoration: BoxDecoration(
         shape: BoxShape.circle,
         boxShadow: [
           BoxShadow(
-            color: Color(0x23C8C8C8),
+            color: myColors.shadowColor1,
             blurRadius: 0,
             offset: Offset(0, 0),
             spreadRadius: 0,
           ),
           BoxShadow(
-            color: Color(0x23CCCCCC),
+            color: myColors.shadowColor2,
             blurRadius: 3,
             offset: Offset(0, 1),
             spreadRadius: 0,
           ),
           BoxShadow(
-            color: Color(0x1EB0B0B0),
+            color: myColors.shadowColor3,
             blurRadius: 5,
             offset: Offset(1, 5),
             spreadRadius: 0,
           ),
           BoxShadow(
-            color: Color(0x11000000),
+            color: myColors.shadowColor4,
             blurRadius: 7,
             offset: Offset(3, 11),
             spreadRadius: 0,
           ),
           BoxShadow(
-            color: Color(0x05ADADAD),
+            color: myColors.shadowColor5,
             blurRadius: 8,
             offset: Offset(5, 19),
             spreadRadius: 0,
           ),
           BoxShadow(
-            color: Color(0x009E9E9E),
+            color: myColors.shadowColor6,
             blurRadius: 9,
             offset: Offset(7, 30),
             spreadRadius: 0,
