@@ -11,11 +11,13 @@ class ExplorePage extends StatelessWidget {
       body: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Row(
                 children: [
                   Expanded(
                     flex: 4,
+                    //********************Search field*************************/
                     child: Container(
                         padding: const EdgeInsets.symmetric(horizontal: 10),
                         decoration: BoxDecoration(
@@ -36,14 +38,18 @@ class ExplorePage extends StatelessWidget {
                           iconColor: myColors.whiteColor))
                 ],
               ),
-              Align(
-                  alignment: Alignment.topLeft,
-                  child: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: myWidget.titleText(text: "Categories"))),
+              //******************** Title Text*************************/
+              Padding(
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 5, vertical: 5),
+                  child: myWidget.titleText(
+                      fontWeight: FontWeight.w500,
+                      text: "Categories",
+                      fontSize: 25)),
               const SizedBox(
                 height: 20,
               ),
+              //********************CircleAvatar icons*************************/
               Row(
                 children: [
                   Expanded(
@@ -58,6 +64,42 @@ class ExplorePage extends StatelessWidget {
                   Expanded(
                       child: myWidget.assetsAvatar(
                           asset: "assets/icons/bulb.svg")),
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Padding(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 5, vertical: 15),
+                      child: myWidget.titleText(
+                          fontWeight: FontWeight.w500,
+                          text: "Best Selling",
+                          fontSize: 18)),
+                  Padding(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 5, vertical: 15),
+                      child: myWidget.titleText(
+                          fontWeight: FontWeight.w500,
+                          text: "See All",
+                          fontSize: 15)),
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Expanded(
+                    child: Column(
+                      children: [
+                        SizedBox(
+                            height: 200,
+                            child: Image.asset("assets/images/lamp.png")),
+                      ],
+                    ),
+                  ),
+                  SizedBox(
+                      height: 200,
+                      child: Image.asset("assets/images/watch.png"))
                 ],
               )
             ],

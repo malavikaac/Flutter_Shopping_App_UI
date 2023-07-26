@@ -81,7 +81,7 @@ class _HomePageState extends State<HomePage> {
             },
             icon: pageIndex == 2
                 ? Icon(
-                    Icons.person,
+                    Icons.person_outline,
                     color: myColors.greenColor,
                     size: 35,
                   )

@@ -5,19 +5,26 @@ import 'package:shopping_ui_screen/constants/colors.dart';
 final myWidget = MyWidget();
 
 class MyWidget {
-  Widget titleText({required String text}) {
+  Widget titleText(
+      {required String text,
+      required double fontSize,
+      required FontWeight fontWeight}) {
     return Text(text,
         style: TextStyle(
-            fontSize: 25,
-            fontWeight: FontWeight.w500,
+            fontSize: fontSize,
+            fontWeight: fontWeight,
             color: myColors.titleTextColor));
   }
 
-  Widget greyText({required text}) {
-    return Text(
-      text,
-      style: TextStyle(color: myColors.greyTextColor, fontSize: 18),
-    );
+  Widget normalText(
+      {required String text,
+      required double fontSize,
+      required FontWeight fontWeight}) {
+    return Text(text,
+        style: TextStyle(
+            fontSize: fontSize,
+            fontWeight: fontWeight,
+            color: myColors.titleTextColor));
   }
 
   Widget iconAvatar(
@@ -42,43 +49,43 @@ class MyWidget {
           BoxShadow(
             color: myColors.shadowColor1,
             blurRadius: 0,
-            offset: Offset(0, 0),
+            offset: const Offset(0, 0),
             spreadRadius: 0,
           ),
           BoxShadow(
             color: myColors.shadowColor2,
             blurRadius: 3,
-            offset: Offset(0, 1),
+            offset: const Offset(0, 1),
             spreadRadius: 0,
           ),
           BoxShadow(
             color: myColors.shadowColor3,
             blurRadius: 5,
-            offset: Offset(1, 5),
+            offset: const Offset(1, 5),
             spreadRadius: 0,
           ),
           BoxShadow(
             color: myColors.shadowColor4,
             blurRadius: 7,
-            offset: Offset(3, 11),
+            offset: const Offset(3, 11),
             spreadRadius: 0,
           ),
           BoxShadow(
             color: myColors.shadowColor5,
             blurRadius: 8,
-            offset: Offset(5, 19),
+            offset: const Offset(5, 19),
             spreadRadius: 0,
           ),
           BoxShadow(
             color: myColors.shadowColor6,
             blurRadius: 9,
-            offset: Offset(7, 30),
+            offset: const Offset(7, 30),
             spreadRadius: 0,
           )
         ],
       ),
       child: CircleAvatar(
-        backgroundColor: Color.fromARGB(255, 255, 255, 255),
+        backgroundColor: myColors.whiteColor,
         maxRadius: 25,
         child: Center(
           child: SvgPicture.asset(asset, height: 30),
