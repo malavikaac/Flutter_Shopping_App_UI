@@ -99,6 +99,9 @@ class ExplorePage extends StatelessWidget {
                   ),
                   SizedBox(
                       height: 200,
+                      child: Image.asset("assets/images/watch.png")),
+                  SizedBox(
+                      height: 200,
                       child: Image.asset("assets/images/watch.png"))
                 ],
               )
