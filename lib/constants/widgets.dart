@@ -8,12 +8,11 @@ class MyWidget {
   Widget titleText(
       {required String text,
       required double fontSize,
-      required FontWeight fontWeight}) {
+      required FontWeight fontWeight,
+      Color? color}) {
     return Text(text,
         style: TextStyle(
-            fontSize: fontSize,
-            fontWeight: fontWeight,
-            color: myColors.titleTextColor));
+            fontSize: fontSize, fontWeight: fontWeight, color: color));
   }
 
   Widget normalText(
@@ -88,7 +87,7 @@ class MyWidget {
         backgroundColor: myColors.whiteColor,
         maxRadius: 25,
         child: Center(
-          child: SvgPicture.asset(asset, height: 30),
+          child: SvgPicture.asset(asset, height: 35),
         ),
       ),
     );
