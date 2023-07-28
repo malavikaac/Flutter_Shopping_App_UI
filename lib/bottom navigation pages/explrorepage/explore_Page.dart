@@ -19,18 +19,7 @@ class ExplorePage extends StatelessWidget {
                     Expanded(
                       flex: 4,
                       //********************Search field*************************/
-                      child: Container(
-                          padding: const EdgeInsets.symmetric(horizontal: 10),
-                          decoration: BoxDecoration(
-                              color: myColors.searchFieldColor,
-                              borderRadius: BorderRadius.circular(30)),
-                          child: TextFormField(
-                            decoration: const InputDecoration(
-                                prefixIcon: Icon(Icons.search),
-                                hintText: "Search",
-                                disabledBorder: InputBorder.none,
-                                border: InputBorder.none),
-                          )),
+                      child: myWidget.searchField()
                     ),
                     Expanded(
                         child: myWidget.iconAvatar(
