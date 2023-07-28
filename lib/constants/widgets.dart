@@ -5,6 +5,22 @@ import 'package:shopping_ui_screen/constants/colors.dart';
 final myWidget = MyWidget();
 
 class MyWidget {
+  Widget searchField() {
+    return Container(
+        height: 60,
+        padding: const EdgeInsets.symmetric(horizontal: 10),
+        decoration: BoxDecoration(
+            color: myColors.searchFieldColor,
+            borderRadius: BorderRadius.circular(30)),
+        child: TextFormField(
+          decoration: const InputDecoration(
+              prefixIcon: Icon(Icons.search),
+              hintText: "Search",
+              disabledBorder: InputBorder.none,
+              border: InputBorder.none),
+        ));
+  }
+
   Widget titleText(
       {required String text,
       required double fontSize,
@@ -13,6 +29,19 @@ class MyWidget {
     return Text(text,
         style: TextStyle(
             fontSize: fontSize, fontWeight: fontWeight, color: color));
+  }
+
+  Widget button(
+      {required String text,
+      required double fontSize,
+      required FontWeight fontWeight,
+      Color? color,
+      required Function onPressed}) {
+    return TextButton(
+        onPressed: onPressed as void Function(),
+        child: Text(text,
+            style: TextStyle(
+                fontSize: fontSize, fontWeight: fontWeight, color: color)));
   }
 
   Widget normalText(

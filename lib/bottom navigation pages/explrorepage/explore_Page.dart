@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../constants/colors.dart';
-import '../constants/widgets.dart';
+import '../../constants/colors.dart';
+import '../../constants/widgets.dart';
 
 class ExplorePage extends StatelessWidget {
   const ExplorePage({Key? key}) : super(key: key);
@@ -81,10 +81,18 @@ class ExplorePage extends StatelessWidget {
                     Padding(
                         padding: const EdgeInsets.symmetric(
                             horizontal: 5, vertical: 10),
-                        child: myWidget.titleText(
+                        child: myWidget.button(
+                            fontSize: 15,
                             fontWeight: FontWeight.w500,
-                            text: "See All",
-                            fontSize: 15)),
+                            color: myColors.blackColor,
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => Scaffold(),
+                                  ));
+                            },
+                            text: "See All")),
                   ],
                 ),
                 //*******************Products Images*************************/

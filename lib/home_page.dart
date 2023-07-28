@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'constants/colors.dart';
-import 'bottom navigation pages/explore_Page.dart';
+import 'bottom navigation pages/explrorepage/explore_Page.dart';
 import 'bottom navigation pages/profile_page.dart';
 import 'bottom navigation pages/shopping_page.dart';
 
@@ -30,8 +30,9 @@ class _HomePageState extends State<HomePage> {
 
   Container buildMyNavBar(BuildContext context) {
     return Container(
-      height: 60,
+      height: 50,
       child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           IconButton(
