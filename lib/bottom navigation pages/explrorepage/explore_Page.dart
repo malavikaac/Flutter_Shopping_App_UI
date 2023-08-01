@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../constants/colors.dart';
 import '../../constants/widgets.dart';
+import 'products_page.dart';
 
 class ExplorePage extends StatelessWidget {
   const ExplorePage({Key? key}) : super(key: key);
@@ -17,10 +18,10 @@ class ExplorePage extends StatelessWidget {
                 Row(
                   children: [
                     Expanded(
-                      flex: 4,
-                      //********************Search field*************************/
-                      child: myWidget.searchField()
-                    ),
+                        flex: 4,
+                        //********************Search field*************************/
+                        child: myWidget.searchField()),
+                    //********************circular icon*************************/
                     Expanded(
                         child: myWidget.iconAvatar(
                             backGroundColor: myColors.greenColor,
@@ -78,7 +79,7 @@ class ExplorePage extends StatelessWidget {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                    builder: (context) => Scaffold(),
+                                    builder: (context) => ProductPage(),
                                   ));
                             },
                             text: "See All")),
