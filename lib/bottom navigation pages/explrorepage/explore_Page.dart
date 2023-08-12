@@ -10,7 +10,7 @@ class ExplorePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 40),
           child: SingleChildScrollView(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -29,6 +29,9 @@ class ExplorePage extends StatelessWidget {
                             iconColor: myColors.whiteColor))
                   ],
                 ),
+                const SizedBox(
+                  height: 20,
+                ),
                 //******************** Title Text*************************/
                 Padding(
                     padding:
@@ -38,7 +41,7 @@ class ExplorePage extends StatelessWidget {
                         text: "Categories",
                         fontSize: 25)),
                 const SizedBox(
-                  height: 20,
+                  height: 10,
                 ),
                 //********************CircleAvatar icons*************************/
                 Row(

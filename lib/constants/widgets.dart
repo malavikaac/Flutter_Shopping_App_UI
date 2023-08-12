@@ -7,7 +7,7 @@ final myWidget = MyWidget();
 class MyWidget {
   Widget searchField() {
     return Container(
-        height: 60,
+        height: 40,
         padding: const EdgeInsets.symmetric(horizontal: 10),
         decoration: BoxDecoration(
             color: myColors.searchFieldColor,
