@@ -32,16 +32,6 @@ class _ProductPageState extends State<ProductPage> {
               icon: Icons.search,
               iconColor: myColors.whiteColor),
         ],
-        // bottom: TabBar(
-        //   tabs: [
-        //     Tab(text: 'All'),
-        //     Tab(
-        //       text: 'HeadSet',
-        //     ),
-        //     Tab(text: 'Sheos'),
-        //     Tab(text: 'Lights'),
-        //   ],
-        // ),
       ),
     );
   }
