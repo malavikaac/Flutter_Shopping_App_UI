@@ -21,7 +21,7 @@ class _ProductPageState extends State<ProductPage> {
             children: [
               myWidget.titleText(
                 text: "Products",
-                fontSize: 19,
+                fontSize: 20,
                 fontWeight: FontWeight.w400,
                 color:Colors.black
               ),
