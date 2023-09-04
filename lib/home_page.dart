@@ -27,7 +27,7 @@ class _HomePageState extends State<HomePage> {
       bottomNavigationBar: buildMyNavBar(context),
     );
   }
-
+//********************Bottom navigation****************** */
   Container buildMyNavBar(BuildContext context) {
     return Container(
       height: 50,
