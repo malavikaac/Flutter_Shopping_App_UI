@@ -55,6 +55,22 @@ class _ProductPageState extends State<ProductPage> {
           ),
         
         ),
+         body: const TabBarView(
+          children: [
+            Center(
+              child: Text("Products"),
+            ),
+            Center(
+              child: Text("Headset"),
+            ),
+            Center(
+              child: Text("Speakers"),
+            ),
+            Center(
+              child: Text("Mic"),
+            ),
+          ],
+        ),
       ),
     );
   }
