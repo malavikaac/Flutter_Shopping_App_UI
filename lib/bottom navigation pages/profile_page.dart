@@ -11,7 +11,7 @@ class ProfilePage extends StatelessWidget {
         child: Text(
           "Profile",
           style: TextStyle(
-            color: Color.fromARGB(255, 175, 175, 175),
+            color: Color.fromARGB(255, 189, 188, 188),
             fontSize: 35,
             fontWeight: FontWeight.w500,
           ),
