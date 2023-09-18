@@ -41,7 +41,7 @@ class MyWidget {
         onPressed: onPressed as void Function(),
         child: Text(text,
             style: TextStyle(
-                fontSize: fontSize, fontWeight: fontWeight, color: color)));
+                fontSize: fontSize, fontWeight: fontWeight, color: color,decoration: TextDecoration.underline)));
   }
 
   Widget normalText(

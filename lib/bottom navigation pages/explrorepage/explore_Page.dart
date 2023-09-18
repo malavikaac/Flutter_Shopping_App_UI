@@ -67,15 +67,16 @@ class ExplorePage extends StatelessWidget {
                         padding: const EdgeInsets.symmetric(
                             horizontal: 5, vertical: 15),
                         child: myWidget.titleText(
+                          color: myColors.titleTextColor,
                             fontWeight: FontWeight.w500,
                             text: "Best Selling",
                             fontSize: 18)),
                     //********************Text Button*************************/
                     Padding(
                         padding: const EdgeInsets.symmetric(
-                            horizontal: 5, vertical: 10),
+                            horizontal: 5, vertical: 8),
                         child: myWidget.button(
-                            fontSize: 15,
+                            fontSize: 14,
                             fontWeight: FontWeight.w500,
                             color: myColors.blackColor,
                             onPressed: () {
@@ -85,7 +86,7 @@ class ExplorePage extends StatelessWidget {
                                     builder: (context) => ProductPage(),
                                   ));
                             },
-                            text: "See All")),
+                            text: "See All",)),
                   ],
                 ),
                 //*******************Products Images*************************/

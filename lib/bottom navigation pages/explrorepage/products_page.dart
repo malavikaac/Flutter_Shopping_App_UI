@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shopping_ui_screen/bottom%20navigation%20pages/explrorepage/all_products_page.dart';
 import 'package:shopping_ui_screen/constants/colors.dart';
 import 'package:shopping_ui_screen/constants/widgets.dart';
 
@@ -10,7 +11,6 @@ class ProductPage extends StatefulWidget {
 }
 
 class _ProductPageState extends State<ProductPage> {
-  
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
@@ -19,25 +19,28 @@ class _ProductPageState extends State<ProductPage> {
         appBar: AppBar(
           elevation: 0,
           centerTitle: true,
-          title: Text("Products",
-          style: TextStyle(
-            color:myColors.blackColor
+          title: Text(
+            "Products",
+            style: TextStyle(color: myColors.blackColor),
           ),
-          ) ,                                                           
-         iconTheme: IconThemeData(color:myColors.blackColor),
+          iconTheme: IconThemeData(color: myColors.blackColor),
           backgroundColor: myColors.whiteColor,
-          actions: [  
+          actions: [
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 10,vertical: 10),
+              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
               child: myWidget.iconAvatar(
                   backGroundColor: myColors.greenColor,
                   icon: Icons.search,
                   iconColor: myColors.whiteColor),
             ),
           ],
-          bottom:  TabBar(
+          bottom: TabBar(
             unselectedLabelColor: myColors.greyTextColor,
-             
+            dividerColor:myColors.greyTextColor ,
+            indicatorColor: myColors.greyTextColor,
+            labelColor: myColors.greenColor,
+            labelPadding: const EdgeInsets.symmetric(horizontal: 5),
+            indicatorWeight: 2,
             tabs: const [
               Tab(
                 text: "All",
@@ -53,13 +56,10 @@ class _ProductPageState extends State<ProductPage> {
               )
             ],
           ),
-        
         ),
-         body: const TabBarView(
+        body:  const TabBarView(
           children: [
-            Center(
-              child: Text("Products"),
-            ),
+          Column(children: [AllProdudtsPage()]),
             Center(
               child: Text("Headset"),
             ),
