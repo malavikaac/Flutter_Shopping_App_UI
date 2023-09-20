@@ -112,7 +112,7 @@ class ExplorePage extends StatelessWidget {
                           ),
                           myWidget.titleText(
                               fontWeight: FontWeight.w600,
-                              text: "\$ 450",
+                              text: "\$ 97",
                               fontSize: 16,
                               color: myColors.greenColor), //product price
                         ],
