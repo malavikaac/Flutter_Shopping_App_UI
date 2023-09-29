@@ -16,4 +16,5 @@ class MyColors {
   Color shadowColor5 = const Color(0x05ADADAD);
   Color shadowColor6 = const Color(0x009E9E9E);
   Color titleTextColor = const Color.fromARGB(255, 59, 59, 59);
+  Color blueColor = Colors.blue;
 }

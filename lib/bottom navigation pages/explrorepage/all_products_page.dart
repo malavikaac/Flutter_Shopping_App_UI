@@ -25,20 +25,20 @@ class _AllProdudtsPageState extends State<AllProdudtsPage> {
                               children: [
                                 SizedBox(
                                     height: 200,
-                                    child: Image.asset("assets/images/lamp.png")),
+                                    child: Image.asset("assets/images/headphones.png")),
                                 const SizedBox(
                                   height: 10,
                                 ),
                                 myWidget.titleText(
                                     fontWeight: FontWeight.w500,
-                                    text: " B&o Desk Lamp",
+                                    text: "Headphones",
                                     fontSize: 16), //product name
                                 const SizedBox(
                                   height: 10,
                                 ),
                                 myWidget.titleText(
                                     fontWeight: FontWeight.w600,
-                                    text: "\$ 450",
+                                    text: "\$ 192",
                                     fontSize: 16,
                                     color: myColors.greenColor), //product price
                               ],
@@ -50,20 +50,20 @@ class _AllProdudtsPageState extends State<AllProdudtsPage> {
                               children: [
                                 SizedBox(
                                     height: 200,
-                                    child: Image.asset("assets/images/watch.png")),
+                                    child: Image.asset("assets/images/speaker.png")),
                                 const SizedBox(
                                   height: 10,
                                 ),
                                 myWidget.titleText(
                                     fontWeight: FontWeight.w500,
-                                    text: "Leather Wristwatch",
+                                    text: "Speaker",
                                     fontSize: 16), //product name
                                 const SizedBox(
                                   height: 10,
                                 ),
                                 myWidget.titleText(
                                     fontWeight: FontWeight.w600,
-                                    text: "\$ 254",
+                                    text: "\$ 84",
                                     fontSize: 16,
                                     color: myColors.greenColor), //product price
                               ],
@@ -81,20 +81,20 @@ class _AllProdudtsPageState extends State<AllProdudtsPage> {
                         children: [
                           SizedBox(
                               height: 200,
-                              child: Image.asset("assets/images/lamp.png")),
+                              child: Image.asset("assets/images/heels.png")),
                           const SizedBox(
                             height: 10,
                           ),
                           myWidget.titleText(
                               fontWeight: FontWeight.w500,
-                              text: " B&o Desk Lamp",
+                              text: "Heels",
                               fontSize: 16), //product name
                           const SizedBox(
                             height: 10,
                           ),
                           myWidget.titleText(
                               fontWeight: FontWeight.w600,
-                              text: "\$ 450",
+                              text: "\$ 60",
                               fontSize: 16,
                               color: myColors.greenColor), //product price
                         ],
@@ -106,20 +106,20 @@ class _AllProdudtsPageState extends State<AllProdudtsPage> {
                         children: [
                           SizedBox(
                               height: 200,
-                              child: Image.asset("assets/images/watch.png")),
+                              child: Image.asset("assets/images/phone.png")),
                           const SizedBox(
                             height: 10,
                           ),
                           myWidget.titleText(
                               fontWeight: FontWeight.w500,
-                              text: "Leather Wristwatch",
+                              text: "Phones",
                               fontSize: 16), //product name
                           const SizedBox(
                             height: 10,
                           ),
                           myWidget.titleText(
                               fontWeight: FontWeight.w600,
-                              text: "\$ 254",
+                              text: "\$ 494",
                               fontSize: 16,
                               color: myColors.greenColor), //product price
                         ],

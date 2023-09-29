@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../constants/colors.dart';
 import '../../constants/widgets.dart';
-import 'products_page.dart';
+import 'main.dart';
 
 class ExplorePage extends StatelessWidget {
   const ExplorePage({Key? key}) : super(key: key);
@@ -78,12 +78,12 @@ class ExplorePage extends StatelessWidget {
                         child: myWidget.button(
                             fontSize: 14,
                             fontWeight: FontWeight.w500,
-                            color: myColors.blackColor,
+                            color: myColors.blueColor,
                             onPressed: () {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                    builder: (context) => ProductPage(),
+                                    builder: (context) => const ProductPage(),
                                   ));
                             },
                             text: "See All",)),
