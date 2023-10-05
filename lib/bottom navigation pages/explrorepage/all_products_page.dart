@@ -13,176 +13,233 @@ class _AllProdudtsPageState extends State<AllProdudtsPage> {
   @override
   Widget build(BuildContext context) {
     return  Padding(
-      padding: const EdgeInsets.symmetric(horizontal:25,vertical: 15),
+      padding: const EdgeInsets.symmetric(vertical: 10),
       child: Column(
         children: [
-          Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        children: [
-                          Expanded(
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                SizedBox(
-                                    height: 200,
-                                    child: Image.asset("assets/images/headphones.png")),
-                                const SizedBox(
-                                  height: 10,
-                                ),
-                                myWidget.titleText(
-                                    fontWeight: FontWeight.w500,
-                                    text: "Headphones",
-                                    fontSize: 16), //product name
-                                const SizedBox(
-                                  height: 10,
-                                ),
-                                myWidget.titleText(
-                                    fontWeight: FontWeight.w600,
-                                    text: "\$ 192",
-                                    fontSize: 16,
-                                    color: myColors.greenColor), //product price
-                              ],
+          Expanded(
+            child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(10),
+                    child: Column(
+                      children: [
+                        Row(
+                          children: [
+                            Expanded(
+                              child: Column(
+                                children: [
+                                  Container(
+                                      margin: const EdgeInsets.all(10),
+                                      height: 210,
+                                      width: double.infinity,
+                                      child: ClipRRect(
+                                        borderRadius: BorderRadius.circular(20),
+                                        child: Image.asset(
+                                          "assets/images/headphones.png",
+                                          fit: BoxFit.fitWidth,
+                                        ),
+                                      )),
+                                  const SizedBox(
+                                    height: 10,
+                                  ),
+                                  myWidget.titleText(
+                                      fontWeight: FontWeight.w500,
+                                      text: "Headphones",
+                                      fontSize: 16), //product name
+                                  const SizedBox(
+                                    height: 10,
+                                  ),
+                                  myWidget.titleText(
+                                      fontWeight: FontWeight.w600,
+                                      text: "\$ 192",
+                                      fontSize: 16,
+                                      color: myColors.greenColor), //product price
+                                ],
+                              ),
                             ),
-                          ),
-                          Expanded(
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                SizedBox(
-                                    height: 200,
-                                    child: Image.asset("assets/images/speaker.png")),
-                                const SizedBox(
-                                  height: 10,
-                                ),
-                                myWidget.titleText(
-                                    fontWeight: FontWeight.w500,
-                                    text: "Speaker",
-                                    fontSize: 16), //product name
-                                const SizedBox(
-                                  height: 10,
-                                ),
-                                myWidget.titleText(
-                                    fontWeight: FontWeight.w600,
-                                    text: "\$ 84",
-                                    fontSize: 16,
-                                    color: myColors.greenColor), //product price
-                              ],
+                            Expanded(
+                              child: Column(
+                                children: [
+                                  Container(
+                                      margin: EdgeInsets.all(10),
+                                      height: 210,
+                                      width: double.infinity,
+                                      child: ClipRRect(
+                                        borderRadius: BorderRadius.circular(20),
+                                        child: Image.asset(
+                                          "assets/images/speaker.png",
+                                          fit: BoxFit.cover,
+                                        ),
+                                      )),
+                                  const SizedBox(
+                                    height: 10,
+                                  ),
+                                  myWidget.titleText(
+                                      fontWeight: FontWeight.w500,
+                                      text: "Speaker",
+                                      fontSize: 16), //product name
+                                  const SizedBox(
+                                    height: 10,
+                                  ),
+                                  myWidget.titleText(
+                                      fontWeight: FontWeight.w600,
+                                      text: "\$ 84",
+                                      fontSize: 16,
+                                      color: myColors.greenColor), //product price
+                                ],
+                              ),
                             ),
-                          ),
-                        ],
-                      ),
-                      const SizedBox(height:20,),
-                       Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [
-                    Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          SizedBox(
-                              height: 200,
-                              child: Image.asset("assets/images/heels.png")),
-                          const SizedBox(
-                            height: 10,
-                          ),
-                          myWidget.titleText(
-                              fontWeight: FontWeight.w500,
-                              text: "Heels",
-                              fontSize: 16), //product name
-                          const SizedBox(
-                            height: 10,
-                          ),
-                          myWidget.titleText(
-                              fontWeight: FontWeight.w600,
-                              text: "\$ 60",
-                              fontSize: 16,
-                              color: myColors.greenColor), //product price
-                        ],
-                      ),
+                          ],
+                        ),
+                        Row(
+                          children: [
+                            Expanded(
+                              child: Column(
+                                children: [
+                                  Container(
+                                      margin: const EdgeInsets.all(10),
+                                      height: 210,
+                                      width: double.infinity,
+                                      child: ClipRRect(
+                                        borderRadius: BorderRadius.circular(20),
+                                        child: Image.asset(
+                                          "assets/images/heels.png",
+                                          fit: BoxFit.fitWidth,
+                                        ),
+                                      )),
+                                  const SizedBox(
+                                    height: 10,
+                                  ),
+                                  myWidget.titleText(
+                                      fontWeight: FontWeight.w500,
+                                      text: "Headphones",
+                                      fontSize: 16), //product name
+                                  const SizedBox(
+                                    height: 10,
+                                  ),
+                                  myWidget.titleText(
+                                      fontWeight: FontWeight.w600,
+                                      text: "\$ 192",
+                                      fontSize: 16,
+                                      color: myColors.greenColor), //product price
+                                ],
+                              ),
+                            ),
+                            Expanded(
+                              child: Column(
+                                children: [
+                                  Container(
+                                      margin: EdgeInsets.all(10),
+                                      height: 210,
+                                      width: double.infinity,
+                                      child: ClipRRect(
+                                        borderRadius: BorderRadius.circular(20),
+                                        child: Image.asset(
+                                          "assets/images/phone.png",
+                                          fit: BoxFit.cover,
+                                        ),
+                                      )),
+                                  const SizedBox(
+                                    height: 10,
+                                  ),
+                                  myWidget.titleText(
+                                      fontWeight: FontWeight.w500,
+                                      text: "Speaker",
+                                      fontSize: 16), //product name
+                                  const SizedBox(
+                                    height: 10,
+                                  ),
+                                  myWidget.titleText(
+                                      fontWeight: FontWeight.w600,
+                                      text: "\$ 84",
+                                      fontSize: 16,
+                                      color: myColors.greenColor), //product price
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                        Row(
+                          children: [
+                            Expanded(
+                              child: Column(
+                                children: [
+                                  Container(
+                                      margin: const EdgeInsets.all(10),
+                                      height: 210,
+                                      width: double.infinity,
+                                      child: ClipRRect(
+                                        borderRadius: BorderRadius.circular(20),
+                                        child: Image.asset(
+                                          "assets/images/shoe.png",
+                                          fit: BoxFit.fitWidth,
+                                        ),
+                                      )),
+                                  const SizedBox(
+                                    height: 10,
+                                  ),
+                                  myWidget.titleText(
+                                      fontWeight: FontWeight.w500,
+                                      text: "shoe",
+                                      fontSize: 16), //product name
+                                  const SizedBox(
+                                    height: 10,
+                                  ),
+                                  myWidget.titleText(
+                                      fontWeight: FontWeight.w600,
+                                      text: "\$ 192",
+                                      fontSize: 16,
+                                      color: myColors.greenColor), //product price
+                                ],
+                              ),
+                            ),
+                            Expanded(
+                              child: Column(
+                                children: [
+                                  Container(
+                                      margin: EdgeInsets.all(10),
+                                      height: 210,
+                                      width: double.infinity,
+                                      child: ClipRRect(
+                                        borderRadius: BorderRadius.circular(20),
+                                        child: Image.asset(
+                                          "assets/images/mic.png",
+                                          fit: BoxFit.cover,
+                                        ),
+                                      )),
+                                  const SizedBox(
+                                    height: 10,
+                                  ),
+                                  myWidget.titleText(
+                                      fontWeight: FontWeight.w500,
+                                      text: "mic",
+                                      fontSize: 16), //product name
+                                  const SizedBox(
+                                    height: 10,
+                                  ),
+                                  myWidget.titleText(
+                                      fontWeight: FontWeight.w600,
+                                      text: "\$ 84",
+                                      fontSize: 16,
+                                      color: myColors.greenColor), //product price
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
                     ),
-                    Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          SizedBox(
-                              height: 200,
-                              child: Image.asset("assets/images/phone.png")),
-                          const SizedBox(
-                            height: 10,
-                          ),
-                          myWidget.titleText(
-                              fontWeight: FontWeight.w500,
-                              text: "Phones",
-                              fontSize: 16), //product name
-                          const SizedBox(
-                            height: 10,
-                          ),
-                          myWidget.titleText(
-                              fontWeight: FontWeight.w600,
-                              text: "\$ 494",
-                              fontSize: 16,
-                              color: myColors.greenColor), //product price
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-                      const SizedBox(height:20,),
-                       Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [
-                    Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          SizedBox(
-                              height: 200,
-                              child: Image.asset("assets/images/heels.png")),
-                          const SizedBox(
-                            height: 10,
-                          ),
-                          myWidget.titleText(
-                              fontWeight: FontWeight.w500,
-                              text: "Heels",
-                              fontSize: 16), //product name
-                          const SizedBox(
-                            height: 10,
-                          ),
-                          myWidget.titleText(
-                              fontWeight: FontWeight.w600,
-                              text: "\$ 60",
-                              fontSize: 16,
-                              color: myColors.greenColor), //product price
-                        ],
-                      ),
-                    ),
-                    Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          SizedBox(
-                              height: 200,
-                              child: Image.asset("assets/images/phone.png")),
-                          const SizedBox(
-                            height: 10,
-                          ),
-                          myWidget.titleText(
-                              fontWeight: FontWeight.w500,
-                              text: "Phones",
-                              fontSize: 16), //product name
-                          const SizedBox(
-                            height: 10,
-                          ),
-                          myWidget.titleText(
-                              fontWeight: FontWeight.w600,
-                              text: "\$ 494",
-                              fontSize: 16,
-                              color: myColors.greenColor), //product price
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
+                  ),
+                  
+                ],
+              ),
+            ),
+          ),
+          Container(
+            height: 60,
+            color:Colors.white,
+          )
         ],
       ),
     );

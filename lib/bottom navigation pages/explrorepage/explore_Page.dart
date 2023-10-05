@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../constants/colors.dart';
 import '../../constants/widgets.dart';
-import 'main.dart';
+import 'main_page.dart';
 
 class ExplorePage extends StatelessWidget {
   const ExplorePage({Key? key}) : super(key: key);
