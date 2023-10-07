@@ -62,7 +62,7 @@ class _AllProductsPageState extends State<AllProductsPage> {
                               child: Column(
                                 children: [
                                   Container(
-                                      margin: EdgeInsets.all(10),
+                                      margin: const EdgeInsets.all(10),
                                       height: 210,
                                       width: double.infinity,
                                       child: ClipRRect(
@@ -130,7 +130,7 @@ class _AllProductsPageState extends State<AllProductsPage> {
                               child: Column(
                                 children: [
                                   Container(
-                                      margin: EdgeInsets.all(10),
+                                      margin: const EdgeInsets.all(10),
                                       height: 210,
                                       width: double.infinity,
                                       child: ClipRRect(
@@ -198,7 +198,7 @@ class _AllProductsPageState extends State<AllProductsPage> {
                               child: Column(
                                 children: [
                                   Container(
-                                      margin: EdgeInsets.all(10),
+                                      margin: const EdgeInsets.all(10),
                                       height: 210,
                                       width: double.infinity,
                                       child: ClipRRect(
@@ -238,7 +238,7 @@ class _AllProductsPageState extends State<AllProductsPage> {
           ),
           Container(
             height: 60,
-            color:Colors.white,
+            color:myColors.greyTextColor,
           )
         ],
       ),
