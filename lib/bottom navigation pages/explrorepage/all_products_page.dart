@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:shopping_ui_screen/constants/colors.dart';
 import 'package:shopping_ui_screen/constants/widgets.dart';
 
-class AllProdudtsPage extends StatefulWidget {
-  const AllProdudtsPage({super.key});
+class AllProductsPage extends StatefulWidget {
+  const AllProductsPage({super.key});
 
   @override
-  State<AllProdudtsPage> createState() => _AllProdudtsPageState();
+  State<AllProductsPage> createState() => _AllProductsPageState();
 }
 
-class _AllProdudtsPageState extends State<AllProdudtsPage> {
+class _AllProductsPageState extends State<AllProductsPage> {
   @override
   Widget build(BuildContext context) {
     return  Padding(

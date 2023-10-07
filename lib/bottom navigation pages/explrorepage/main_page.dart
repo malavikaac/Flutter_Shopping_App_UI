@@ -59,7 +59,7 @@ class _ProductPageState extends State<ProductPage> {
         ),
         body:  const TabBarView(
           children: [
-         AllProdudtsPage(),
+         AllProductsPage(),
             Center(
               child: Text("Headset"),
             ),
