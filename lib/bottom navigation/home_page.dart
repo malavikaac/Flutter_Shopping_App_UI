@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'constants/colors.dart';
-import 'bottom navigation pages/explrorepage/explore_Page.dart';
-import 'bottom navigation pages/profile_page.dart';
-import 'bottom navigation pages/shopping_page.dart';
+import '../constants/colors.dart';
+import 'explore/explore_Page.dart';
+import 'profile/profile_page.dart';
+import 'cart/cart_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -30,9 +30,8 @@ class _HomePageState extends State<HomePage> {
 //********************Bottom navigation****************** */
   Container buildMyNavBar(BuildContext context) {
     return Container(
-      height: 50,
+       height: 45,
       child: Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           IconButton(
@@ -46,12 +45,12 @@ class _HomePageState extends State<HomePage> {
                 ? Icon(
                     Icons.explore_outlined,
                     color: myColors.greenColor,
-                    size: 35,
+                    size: 28,
                   )
                 : Icon(
                     Icons.explore_outlined,
                     color: myColors.iconBottomGreyColor,
-                    size: 30,
+                    size: 24,
                   ),
           ),
           IconButton(
@@ -65,12 +64,12 @@ class _HomePageState extends State<HomePage> {
                 ? Icon(
                     Icons.shopping_cart_outlined,
                     color: myColors.greenColor,
-                    size: 35,
+                    size: 28,
                   )
                 : Icon(
                     Icons.shopping_cart_outlined,
                     color: myColors.iconBottomGreyColor,
-                    size: 30,
+                    size: 24,
                   ),
           ),
           IconButton(
@@ -84,12 +83,12 @@ class _HomePageState extends State<HomePage> {
                 ? Icon(
                     Icons.person_outline,
                     color: myColors.greenColor,
-                    size: 35,
+                    size: 28,
                   )
                 : Icon(
                     Icons.person_outline,
                     color: myColors.iconBottomGreyColor,
-                    size: 30,
+                    size: 24,
                   ),
           ),
         ],
