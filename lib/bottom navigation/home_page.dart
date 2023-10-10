@@ -8,6 +8,7 @@ class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
   @override
+  // ignore: library_private_types_in_public_api
   _HomePageState createState() => _HomePageState();
 }
 
@@ -22,9 +23,11 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: pages[pageIndex],
-      bottomNavigationBar: buildMyNavBar(context),
+    return SafeArea(
+      child: Scaffold(
+        body: pages[pageIndex],
+        bottomNavigationBar: buildMyNavBar(context),
+      ),
     );
   }
 //********************Bottom navigation****************** */

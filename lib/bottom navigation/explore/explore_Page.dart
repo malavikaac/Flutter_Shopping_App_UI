@@ -76,7 +76,7 @@ class ExplorePage extends StatelessWidget {
                         padding: const EdgeInsets.symmetric(
                             horizontal: 5, vertical: 8),
                         child: myWidget.button(
-                            fontSize: 14,
+                            fontSize: 13,
                             fontWeight: FontWeight.w500,
                             color: myColors.blueColor,
                             onPressed: () {
@@ -90,61 +90,74 @@ class ExplorePage extends StatelessWidget {
                   ],
                 ),
                 //*******************Products Images*************************/
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [
-                    Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
+                  Row(
                         children: [
-                          SizedBox(
-                              height: 200,
-                              child: Image.asset("assets/images/lamp.png")),
-                          const SizedBox(
-                            height: 10,
+                          Expanded(
+                            child: Column(
+                              children: [
+                                Container(
+                                    margin: const EdgeInsets.all(10),
+                                    height: 210,
+                                    width: double.infinity,
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.circular(20),
+                                      child: Image.asset(
+                                        "assets/images/lamp.png",
+                                        fit: BoxFit.fitWidth,
+                                      ),
+                                    )),
+                                const SizedBox(
+                                  height: 10,
+                                ),
+                                myWidget.titleText(
+                                    fontWeight: FontWeight.w500,
+                                    text: "Desk Lamp",
+                                    fontSize: 16), //product name
+                                const SizedBox(
+                                  height: 10,
+                                ),
+                                myWidget.titleText(
+                                    fontWeight: FontWeight.w600,
+                                    text: "\$ 92",
+                                    fontSize: 16,
+                                    color: myColors.greenColor), //product price
+                              ],
+                            ),
                           ),
-                          myWidget.titleText(
-                              fontWeight: FontWeight.w500,
-                              text: " B&o Desk Lamp",
-                              fontSize: 16), //product name
-                          const SizedBox(
-                            height: 10,
+                          Expanded(
+                            child: Column(
+                              children: [
+                                Container(
+                                    margin: const EdgeInsets.all(10),
+                                    height: 210,
+                                    width: double.infinity,
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.circular(20),
+                                      child: Image.asset(
+                                        "assets/images/watch.png",
+                                        fit: BoxFit.cover,
+                                      ),
+                                    )),
+                                const SizedBox(
+                                  height: 10,
+                                ),
+                                myWidget.titleText(
+                                    fontWeight: FontWeight.w500,
+                                    text: "Leather Wristwatch",
+                                    fontSize: 16), //product name
+                                const SizedBox(
+                                  height: 10,
+                                ),
+                                myWidget.titleText(
+                                    fontWeight: FontWeight.w600,
+                                    text: "\$ 84",
+                                    fontSize: 16,
+                                    color: myColors.greenColor), //product price
+                              ],
+                            ),
                           ),
-                          myWidget.titleText(
-                              fontWeight: FontWeight.w600,
-                              text: "\$ 97",
-                              fontSize: 16,
-                              color: myColors.greenColor), //product price
                         ],
                       ),
-                    ),
-                    Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          SizedBox(
-                              height: 200,
-                              child: Image.asset("assets/images/watch.png")),
-                          const SizedBox(
-                            height: 10,
-                          ),
-                          myWidget.titleText(
-                              fontWeight: FontWeight.w500,
-                              text: "Leather Wristwatch",
-                              fontSize: 16), //product name
-                          const SizedBox(
-                            height: 10,
-                          ),
-                          myWidget.titleText(
-                              fontWeight: FontWeight.w600,
-                              text: "\$ 254",
-                              fontSize: 16,
-                              color: myColors.greenColor), //product price
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
                 const SizedBox(
                   height: 20,
                 ),

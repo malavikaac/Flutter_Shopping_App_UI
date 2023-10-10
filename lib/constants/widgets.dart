@@ -6,18 +6,19 @@ final myWidget = MyWidget();
 
 class MyWidget {
   Widget searchField() {
-    return Container(
-        height: 40,
+    return Container( 
         padding: const EdgeInsets.symmetric(horizontal: 10),
         decoration: BoxDecoration(
             color: myColors.searchFieldColor,
             borderRadius: BorderRadius.circular(30)),
-        child: TextFormField(
-          decoration: const InputDecoration(
-              prefixIcon: Icon(Icons.search),
-              hintText: "Search",
-              disabledBorder: InputBorder.none,
-              border: InputBorder.none),
+        child: Center(
+          child: TextFormField(
+            decoration: const InputDecoration(
+                prefixIcon: Icon(Icons.search, size: 20),
+                hintText: "Search",
+                disabledBorder: InputBorder.none,
+                border: InputBorder.none),
+          ),
         ));
   }
 
@@ -82,7 +83,7 @@ class MyWidget {
           ),
           BoxShadow(
             color: myColors.shadowColor2,
-            blurRadius: 3,
+            blurRadius: 1,
             offset: const Offset(0, 1),
             spreadRadius: 0,
           ),
@@ -95,19 +96,19 @@ class MyWidget {
           BoxShadow(
             color: myColors.shadowColor4,
             blurRadius: 7,
-            offset: const Offset(3, 11),
+            offset: const Offset(3, 5),
             spreadRadius: 0,
           ),
           BoxShadow(
             color: myColors.shadowColor5,
             blurRadius: 8,
-            offset: const Offset(5, 19),
+            offset: const Offset(5, 10),
             spreadRadius: 0,
           ),
           BoxShadow(
             color: myColors.shadowColor6,
-            blurRadius: 9,
-            offset: const Offset(7, 30),
+            blurRadius: 5,
+            offset: const Offset(7, 10),
             spreadRadius: 0,
           )
         ],
@@ -116,7 +117,7 @@ class MyWidget {
         backgroundColor: myColors.whiteColor,
         maxRadius: 25,
         child: Center(
-          child: SvgPicture.asset(asset, height: 35),
+          child: SvgPicture.asset(asset, height: 30),
         ),
       ),
     );
