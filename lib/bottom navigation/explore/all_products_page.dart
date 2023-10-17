@@ -237,6 +237,12 @@ class _AllProductsPageState extends State<AllProductsPage> {
         Container(
           height: 60,
           color:myColors.whiteColor,
+          child:myWidget.button(
+            color:myColors.greenColor,
+            text: 'Filter', 
+            fontSize: 16,
+             fontWeight: FontWeight.normal, 
+             onPressed: (){})
         )
       ],
     );
