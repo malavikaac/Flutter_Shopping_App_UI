@@ -235,7 +235,7 @@ class _AllProductsPageState extends State<AllProductsPage> {
           ),
         ),
         Container(
-          height: 60,
+          height: 40,
           color:myColors.whiteColor,
           child:Row(
           children:[
