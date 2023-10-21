@@ -243,7 +243,7 @@ class _AllProductsPageState extends State<AllProductsPage> {
           myWidget.button(
             color:myColors.greenColor,
             text: 'Filter', 
-            fontSize: 16,
+            fontSize: 14,
              fontWeight: FontWeight.normal, 
              onPressed: (){})
           ]
