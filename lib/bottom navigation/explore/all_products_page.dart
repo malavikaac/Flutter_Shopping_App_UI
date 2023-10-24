@@ -235,7 +235,7 @@ class _AllProductsPageState extends State<AllProductsPage> {
           ),
         ),
         Container(
-          height: 40,
+          height: 35,
           color:myColors.whiteColor,
           child:Row(
           children:[
@@ -243,7 +243,7 @@ class _AllProductsPageState extends State<AllProductsPage> {
           myWidget.button(
             color:myColors.greenColor,
             text: 'Filter', 
-            fontSize: 14,
+            fontSize: 16,
              fontWeight: FontWeight.normal, 
              onPressed: (){})
           ]
