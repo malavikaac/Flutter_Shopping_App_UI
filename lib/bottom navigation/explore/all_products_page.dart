@@ -235,11 +235,11 @@ class _AllProductsPageState extends State<AllProductsPage> {
           ),
         ),
         Container(
-          height: 35,
+          height: 30,
           color:myColors.whiteColor,
           child:Row(
           children:[
-            //  myWidget.normalText(fontSize:20 ,),
+             //myWidget.normalText(fontSize:20 ,),
           myWidget.button(
             color:myColors.greenColor,
             text: 'Filter', 
