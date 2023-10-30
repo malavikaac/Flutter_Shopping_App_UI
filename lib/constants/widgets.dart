@@ -32,7 +32,7 @@ class MyWidget {
             fontSize: fontSize, fontWeight: fontWeight, color: color));
   }
 
-  Widget button(
+  Widget linkButton(
       {required String text,
       required double fontSize,
       required FontWeight fontWeight,
@@ -43,6 +43,26 @@ class MyWidget {
         child: Text(text,
             style: TextStyle(
                 fontSize: fontSize, fontWeight: fontWeight, color: color,decoration: TextDecoration.underline)));
+  }
+  Widget button(
+      {required String text,
+      required double fontSize,
+      required FontWeight fontWeight,
+      Color? color,
+      required Function onPressed}) {
+    return Container(
+      decoration: BoxDecoration(borderRadius: BorderRadius.circular(5),
+
+      color: myColors.greenColor,
+      ),
+      height: 45,
+      width: 100,
+      child: TextButton(
+          onPressed: onPressed as void Function(),
+          child: Text(text,
+              style: TextStyle(
+                  fontSize: fontSize, fontWeight: fontWeight, color: color,))),
+    );
   }
 
   Widget normalText(

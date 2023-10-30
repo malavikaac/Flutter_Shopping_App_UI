@@ -75,7 +75,7 @@ class ExplorePage extends StatelessWidget {
                     Padding(
                         padding: const EdgeInsets.symmetric(
                             horizontal: 5, vertical: 8),
-                        child: myWidget.button(
+                        child: myWidget.linkButton(
                             fontSize: 13,
                             fontWeight: FontWeight.w500,
                             color: myColors.blueColor,

@@ -234,18 +234,35 @@ class _AllProductsPageState extends State<AllProductsPage> {
             ),
           ),
         ),
+        //-------------------------------------------------
         Container(
-          height: 35,
+          height: 50,
+          decoration: BoxDecoration(boxShadow: [ BoxShadow(
+            color: myColors.greyTextColor,
+            blurRadius: 5,
+            offset: const Offset(2, 5),
+            spreadRadius: 0,
+          )],
           color:myColors.whiteColor,
+          ),
           child:Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children:[
-             //myWidget.normalText(fontSize:20 ,),
-          myWidget.button(
-            color:myColors.greenColor,
-            text: 'Filter', 
-            fontSize: 16,
-             fontWeight: FontWeight.normal, 
-             onPressed: (){})
+             Padding(
+               padding: const EdgeInsets.all(10.0),
+               child: myWidget.normalText(fontSize:14 ,
+               fontWeight: FontWeight.normal,
+               text: "No filters applied"),
+             ),
+          Padding(
+            padding:  const EdgeInsets.symmetric(horizontal:10,vertical: 10 ),
+            child: myWidget.button(
+              color:myColors.whiteColor,
+              text: 'Filter', 
+              fontSize: 16,
+               fontWeight: FontWeight.normal, 
+               onPressed: (){}),
+          )
           ]
           )
         )
