@@ -236,7 +236,7 @@ class _AllProductsPageState extends State<AllProductsPage> {
         ),
         //-------------------------------------------------
         Container(
-          height: 50,
+          height: 55,
           decoration: BoxDecoration(boxShadow: [ BoxShadow(
             color: myColors.greyTextColor,
             blurRadius: 5,
