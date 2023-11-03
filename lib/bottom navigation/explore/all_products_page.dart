@@ -186,7 +186,7 @@ class _AllProductsPageState extends State<AllProductsPage> {
                                 ),
                                 myWidget.titleText(
                                     fontWeight: FontWeight.w600,
-                                    text: "\$ 152",
+                                    text: "\$ 142",
                                     fontSize: 16,
                                     color: myColors.greenColor), //product price
                               ],
